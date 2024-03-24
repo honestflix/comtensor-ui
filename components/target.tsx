@@ -9,7 +9,7 @@ export default function Target() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2" data-aos="fade-up">From the big picture to every tiny detail, we got you covered.</h2>
+            <h2 className="h2" data-aos="fade-up">We warmly welcome development teams and individual contributors.</h2>
           </div>
 
           {/* Items */}
