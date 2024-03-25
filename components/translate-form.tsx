@@ -20,7 +20,7 @@ export default function TranslateForm() {
       target_lang: "zh"
     };
 
-    axios.post('http://api.comtensor.io/translate/', data, {
+    axios.post('https://api.comtensor.io/translate/', data, {
       headers: {
         'accept': 'application/json',
         'Content-Type': 'application/json'
