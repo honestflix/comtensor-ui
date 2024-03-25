@@ -7,7 +7,7 @@ const ComtensorListPage = () => {
     
 	return (
 		<main className="mt-[30px] my-auto mx-auto xl:w-[1400px] px-[20px] py-[50px]">
-            <h2 className="text-[32px] font-bold text-left">
+            <h2 className="mt-[40px] text-[32px] font-bold text-center">
                 Comtensor List
             </h2>
             <div className="mt-[60px] flex flex-wrap justify-start gap-x-[20px] gap-y-[40px]">
