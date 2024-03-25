@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Transition } from '@headlessui/react'
 import TabsImage01 from '@/public/images/tab-image-01.png'
 import HeroImage01 from '@/public/images/hero-image-01.jpg'
+import Stats from './stats'
 
 export default function Tabs() {
 
@@ -31,6 +32,8 @@ export default function Tabs() {
             <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">How to support us</h2>
             <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-tabs]">If you like and want to support our project, please consider staking your $com-ai with our validator hotkey.</p>
             <br/>
+            <br/>
+            <Stats />
             <div className="flex justify-center items-center">
               <p className="font-bold text-blue-500 text-[20px] bg-gray-800 mr-2 rounded-md px-1">5FcRCvjeLee9kpM8GmkjAnsUzUf4vXYFY6wTZugrgCAdE1TD</p>
               <button onClick={() => navigator.clipboard.writeText('5FcRCvjeLee9kpM8GmkjAnsUzUf4vXYFY6wTZugrgCAdE1TD')}>
