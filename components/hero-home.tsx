@@ -1,4 +1,4 @@
-import VideoThumb from '@/public/images/comtensor.png'
+import VideoThumb from '@/public/images/comtensor_landing.png'
 import ModalVideo from '@/components/modal-video'
 
 export default function ComtensorHome() {
