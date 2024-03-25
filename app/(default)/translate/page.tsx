@@ -15,10 +15,10 @@ export default function Features() {
   return (
     <>
       <TranslateForm />
-      <Hero />
+      {/* <Hero />
       <Blocks />
       <CaseStudies />
-      <Cta />
+      <Cta /> */}
     </>
   )
 }
