@@ -18,7 +18,7 @@ const ComtensorItem = ({ symbol, name, description }:ComtensorItemType) => {
 
     return (
         <div onClick={() => onClickSubnetItemHandle()}
-            className="border-[1px] border-[#f2f2f2] text-[#f2f2f2] px-[20px] py-[10px] rounded-[20px] w-[200px] 
+            className="border-[1px] border-[#f2f2f2] text-[#f2f2f2] px-[20px] py-[10px] rounded-[20px] w-[240px] 
                 cursor-pointer duration-300 transition-all hover:opacity-75 hover:border-[#5D5DFF] ">
             <h3 className="text-[16px] font-bold">
                 {symbol}
