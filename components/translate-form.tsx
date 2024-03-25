@@ -15,7 +15,7 @@ export default function TranslateForm() {
   const [isTargetOpen, setIsTargetOpen] = useState(false);
   const [targetLang, setTargetLang] = useState('zh');
   const [sourceLang, setSourceLang] = useState('en');
-  const languages = {
+  const languages:any = {
     "English" : "en",
     "Chinese" : "zh",
     "Spainish" : "es"
