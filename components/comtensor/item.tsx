@@ -1,5 +1,5 @@
 "use client"
-import { useRouter } from "next/navigation";
+
 import Image from "next/image";
 import subnetImage from '@/public/images/subnet-2-banner.webp';
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
