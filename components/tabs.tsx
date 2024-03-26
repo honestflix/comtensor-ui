@@ -119,7 +119,7 @@ export default function Tabs() {
                     <div className="relative bg-gray-800 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl">
                       <h4 className="h4 mb-2">Com - Bittranslate</h4>
                       <p className="text-lg text-gray-400">BitTranslate’s process is a synergy between Validators and Miners. Validators begin by proceeding organic requests or by extracting sample texts in specific languages from the dataset. To guarantee uniqueness, these texts are processed using a Text Generation model.</p>
-                      <a className="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6" href="#0">
+                      <a className="btn-sm text-white bg-purple-600 hover:bg-purple-700 mt-6" href="/translate">
                         <span className="text-sm">Go to Com-Bittranslate</span>
                         <svg className="w-3 h-3 fill-current text-purple-400 shrink-0 ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                           <path d="M6 5H0v2h6v4l6-5-6-5z" />

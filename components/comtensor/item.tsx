@@ -3,17 +3,18 @@ import { useRouter } from "next/navigation";
 type ComtensorItemType = {
     symbol: string;
     name: string;
+    url: string;
     description: string;
 }
 
 
-const ComtensorItem = ({ symbol, name, description }:ComtensorItemType) => {
+const ComtensorItem = ({ symbol, name, url, description }:ComtensorItemType) => {
 
     const router = useRouter();
 
     const onClickSubnetItemHandle = () => {
-        const id = name.toLowerCase().replace(" ", '-');
-        router.push(`/comtensor/${id}`);
+        const id = url.toLowerCase().replace(" ", '-');
+        router.push(`/${id}`);
     }
 
     return (
