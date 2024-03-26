@@ -1,7 +1,11 @@
-"use client";
 import ComtensorItem from "@/components/comtensor/item";
 import { items } from "@/components/comtensor/item-data";
 
+export const metadata = {
+    title: 'Comtensor list',
+    description: 'comtensor',
+}
+  
 
 const ComtensorListPage = () => {
     
