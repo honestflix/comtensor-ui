@@ -9,18 +9,19 @@ type ComtensorItemType = {
     image: StaticImport | string;
     creator: string;
     name: string;
+    url: string;
     description: string;
 }
 
 
-const ComtensorItem = ({ creator, netuid, image, name, description }:ComtensorItemType) => {
+const ComtensorItem = ({ creator, netuid, image, name, url, description }:ComtensorItemType) => {
 
 
     return (
         <div className="border-[1px] border-[#f2f2f2] text-[#f2f2f2] rounded-[20px] w-[280px] bg-[#1f2330]
                 cursor-pointer duration-300 transition-all hover:opacity-75 hover:border-primary ">
             <div className="relative space-y-2 rounded-lg  transition-all duration-150 ease-out overflow-hidden">
-                <a className="relative aspect-[3/2] flex rounded-t-lg w-full bg-white/5 overflow-hidden" href={`comtensor-list/${netuid}`}>
+                <a className="relative aspect-[3/2] flex rounded-t-lg w-full bg-white/5 overflow-hidden" href={`${url}`}>
                     <Image alt={name} width={450} height={300} src={image} className="rounded-t-[20px] object-cover"/>
                 </a>
                 <div className="p-5">
