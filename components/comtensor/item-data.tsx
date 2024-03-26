@@ -142,8 +142,8 @@ export const items = [
     {
         netuid: 16,
         image: subnetImageSixteen,
-        creator: 'Audio Generation',
-        name: "UncleTed",
+        creator: 'UncleTed',
+        name: "Audio Generation",
         description: "This subnetwork is a decentralized system designed for text-to-audio applications within the Bittensor network. It consists of a Validator and a Miner working collaboratively to generate high-quality audio from provided prompts. In the first phase, we will start with text-to-speech (TTS), working in parallel to add music generation in the upcoming updates."
     },
     {
