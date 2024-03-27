@@ -279,7 +279,7 @@ export const items = [
         image: subnetImageThirtyOne,
         creator: 'bthealthcare',
         name: "Healthcare",
-        url: '',
+        url: 'healthcare',
         description: "Bittensor Subnet 31, known as the Healthcare-Subnet, aims to revolutionize medical diagnostics using AI. It focuses on enhancing disease diagnosis by analyzing medical images, with an overarching goal to evolve into a comprehensive AI-driven healthcare system. Miners and validators play crucial roles; miners analyze medical images using AI, and validators ensure the reliability and accuracy of these AI models. The subnet emphasizes collaboration with medical professionals and data scientists and is currently developing a user-friendly mobile app for easy access to AI-driven diagnostics. The long-term vision includes expanding diagnostic capabilities and integrating advanced patient data analysis techniques for a global, AI-driven healthcare system."
     },
     {
