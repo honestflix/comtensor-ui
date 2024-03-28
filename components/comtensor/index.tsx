@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import ComtensorItem from "@/components/comtensor/item";
 import { items } from "@/components/comtensor/item-data";
@@ -28,7 +28,16 @@ const container = {
 };
 
 const ComtensorList = () => {
-    
+    const [mounted, setMounted] = useState<boolean>(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, [])
+
+    if(!mounted) {
+        return <></>
+    }
+
 	return (
 		<div>
             <h2 className="mt-[40px] text-[32px] font-bold text-center text-[#5D5DFF]">
