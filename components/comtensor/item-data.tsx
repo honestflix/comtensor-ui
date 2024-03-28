@@ -53,10 +53,10 @@ export const items = [
     {
         netuid: 3,
         image: subnetImageThree,
-        creator: 'GitPhantom',
-        name: "Hotkey",
+        creator: 'MyShell',
+        name: "MyShell",
         url: '',
-        description: "HotKey, your gateway to a revolutionized digital finance landscape. Here, effortless trading fuses with AI-powered insights, all within a cohesive ecosystem designed for the modern crypto enthusiast."
+        description: "MyShell specializes in advancing Text-to-Speech (TTS) technology, focusing on developing open-source TTS models. Led by a team with strong academic backgrounds and significant expertise, MyShell contributes to enhancing voice-enabled applications through innovation and collaboration."
     },
     {
         netuid: 4,
