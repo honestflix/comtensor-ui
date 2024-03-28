@@ -55,7 +55,7 @@ export const items = [
         image: subnetImageThree,
         creator: 'MyShell',
         name: "MyShell",
-        url: '',
+        url: 'myshell',
         description: "MyShell specializes in advancing Text-to-Speech (TTS) technology, focusing on developing open-source TTS models. Led by a team with strong academic backgrounds and significant expertise, MyShell contributes to enhancing voice-enabled applications through innovation and collaboration."
     },
     {

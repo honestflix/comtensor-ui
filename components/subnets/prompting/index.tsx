@@ -65,7 +65,7 @@ const Prompting = () => {
                 <h1 className="h2 mb-4">Prompting powered by ComTensor</h1>
             </div>
             <div className='mt-[20px] border-[2px] border-[#5D5DFF] rounded-[20px] sm:px-[10px] py-[60px] relative bg-[#1f2330] max-w-[860px] mx-auto'>
-                <div className='h-[480px] mb-[30px]'>
+                <div className='h-[480px] mb-[30px] overflow-y-scroll light-scroll-bar'>
                     <div className='mx-[10px] sm:mx-[30px]'>
                         {
                             conversation.map((item, idx) => (
