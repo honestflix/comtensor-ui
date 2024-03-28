@@ -20,20 +20,27 @@ const Prompting = () => {
             if (event.key === 'Enter') {
                 sendMessage();
             }
-         }
+        }
          
-         const inputElement = inputRef.current!;
-   
-         if(inputElement) {
+        const inputElement = inputRef.current!;
+
+        if(inputElement) {
             inputElement.addEventListener('keypress', handleKeyPress);
-   
+
             return () => {
-               inputElement.removeEventListener('keypress', handleKeyPress);
+                inputElement.removeEventListener('keypress', handleKeyPress);
             };
-         }
+        }
 
     }, [inputVal]);
 
+    useEffect(() => {
+        const element = document.getElementById('conversation-bottom'); 
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' }); 
+        }
+
+    }, [conversation]);
     
     const onSendQueryHandle = async() => {
         const data = {
@@ -70,8 +77,8 @@ const Prompting = () => {
                         {
                             conversation.map((item, idx) => (
                                 item.role == "user" ? 
-                                <div key={idx} className="flex justify-end items-start mb-4">
-                                    <div className="mr-2 py-3 px-4 bg-blue-400 rounded-bl-3xl rounded-tl-3xl rounded-tr-xl text-white" >
+                                <div key={idx} className="flex justify-end items-start mb-4 ">
+                                    <div className="mr-2 py-3 px-4 bg-blue-400 rounded-bl-3xl rounded-tl-3xl rounded-tr-xl text-white break-all" >
                                         {item.content}
                                     </div>
                                     {/* <Image src={meImage} width={50} height={50} alt='me' /> */}
@@ -79,12 +86,13 @@ const Prompting = () => {
                                 :
                                 <div key={idx} className="flex justify-start items-start mb-4">
                                     {/* <Image src={communeImage} width={50} height={50} alt='commune' /> */}
-                                    <div className="ml-2 py-3 px-4 bg-gray-400 rounded-br-3xl rounded-tr-3xl rounded-tl-xl text-white" >
+                                    <div className="ml-2 py-3 px-4 bg-gray-400 rounded-br-3xl rounded-tr-3xl rounded-tl-xl text-white break-all" >
                                         {item.content}
                                     </div>
                                 </div>
                             ))
                         }
+                        <div id='conversation-bottom'></div>
                     </div>
                 </div>
                 <div className="absolute bottom-[20px] left-1/2 -translate-x-1/2 flex justify-center w-full px-[20px]">
