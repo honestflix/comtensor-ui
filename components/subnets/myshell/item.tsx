@@ -13,7 +13,7 @@ const MessageItem = ({message}: MessageItemType) => {
     
     return (
         <div className="bg-[#303846] p-[16px] rounded-md">
-            <p className="text-[14px]">
+            <p className="text-[14px] break-all">
                 {message}
             </p>
             <div>

@@ -14,6 +14,8 @@ const Prompting = () => {
     const [conversation, setConversation] = useState<ConversationType[]>([]);
     const [inputVal, setInputValue] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
+    const conversationScroll = useRef<HTMLDivElement>(null);
+
 
     useEffect(() => {
         function handleKeyPress(event: KeyboardEvent) {
@@ -33,14 +35,16 @@ const Prompting = () => {
         }
 
     }, [inputVal]);
-
+    
     useEffect(() => {
-        const element = document.getElementById('conversation-bottom'); 
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' }); 
+
+        if(conversationScroll.current) {
+            const targetScrollTop = conversationScroll.current.scrollHeight - conversationScroll.current.clientHeight;
+            conversationScroll.current.scrollTop = targetScrollTop;
         }
 
     }, [conversation]);
+
     
     const onSendQueryHandle = async() => {
         const data = {
@@ -72,7 +76,7 @@ const Prompting = () => {
                 <h1 className="h2 mb-4">Prompting powered by ComTensor</h1>
             </div>
             <div className='mt-[20px] border-[2px] border-[#5D5DFF] rounded-[20px] sm:px-[10px] py-[60px] relative bg-[#1f2330] max-w-[860px] mx-auto'>
-                <div className='h-[480px] mb-[30px] overflow-y-scroll light-scroll-bar'>
+                <div ref={conversationScroll}  className='h-[480px] mb-[30px] overflow-y-scroll light-scroll-bar'>
                     <div className='mx-[10px] sm:mx-[30px]'>
                         {
                             conversation.map((item, idx) => (
@@ -92,7 +96,6 @@ const Prompting = () => {
                                 </div>
                             ))
                         }
-                        <div id='conversation-bottom'></div>
                     </div>
                 </div>
                 <div className="absolute bottom-[20px] left-1/2 -translate-x-1/2 flex justify-center w-full px-[20px]">
