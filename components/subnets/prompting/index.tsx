@@ -1,7 +1,8 @@
 "use client"
 import react, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-
+import comImage from '@/public/images/commune-logo.svg';
+import userImage from '@/public/images/male-user-icon.webp';
 
 type ConversationType = {
     role: string;
@@ -86,10 +87,12 @@ const Prompting = () => {
                                         {item.content}
                                     </div>
                                     {/* <Image src={meImage} width={50} height={50} alt='me' /> */}
+                                    <Image src={userImage} className='rounded-full' width={50} height={50} alt='user' />
+
                                 </div>
                                 :
                                 <div key={idx} className="flex justify-start items-start mb-4">
-                                    {/* <Image src={communeImage} width={50} height={50} alt='commune' /> */}
+                                    <Image src={comImage} className='rounded-full' width={50} height={50} alt='commune' />
                                     <div className="ml-2 py-3 px-4 bg-gray-400 rounded-br-3xl rounded-tr-3xl rounded-tl-xl text-white break-all" >
                                         {item.content}
                                     </div>
@@ -103,7 +106,7 @@ const Prompting = () => {
                         <input ref={inputRef} value={inputVal} onChange={(e) => setInputValue(e.target.value)}  disabled={loading}
                             className="w-full bg-gray-500 py-5 px-3 rounded-xl outline-none 
                                 hover:bg-[#303846] focus:bg-[#303846] focus:border-primary duration-300 transition-all "
-                            type="text" placeholder="Type ..."
+                            type="text" placeholder="Type here ..."
                         />
                     </div>
                 </div>
