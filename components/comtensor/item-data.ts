@@ -39,7 +39,7 @@ export const items = [
         image: subnetImageOne,
         creator: 'Open Tensor',
         name: "Text Prompting",
-        url: 'prompting',
+        url: '',
         description: "Subnet 1 in the Bittensor network is dedicated to incentivizing the development of conversational intelligence at an internet scale. It serves as a platform for advancing AI communication technologies, where participants are rewarded for their contributions towards this aim. This subnet is a key part of Bittensor’s decentralized AI service ecosystem, encouraging innovation and participation in the field of AI-driven conversations. "
     },
     {
@@ -53,10 +53,10 @@ export const items = [
     {
         netuid: 3,
         image: subnetImageThree,
-        creator: 'MyShell',
-        name: "MyShell",
-        url: 'myshell',
-        description: "MyShell specializes in advancing Text-to-Speech (TTS) technology, focusing on developing open-source TTS models. Led by a team with strong academic backgrounds and significant expertise, MyShell contributes to enhancing voice-enabled applications through innovation and collaboration."
+        creator: 'GitPhantom',
+        name: "Hotkey",
+        url: '',
+        description: "HotKey, your gateway to a revolutionized digital finance landscape. Here, effortless trading fuses with AI-powered insights, all within a cohesive ecosystem designed for the modern crypto enthusiast."
     },
     {
         netuid: 4,
@@ -279,7 +279,7 @@ export const items = [
         image: subnetImageThirtyOne,
         creator: 'bthealthcare',
         name: "Healthcare",
-        url: '',
+        url: 'healthcare',
         description: "Bittensor Subnet 31, known as the Healthcare-Subnet, aims to revolutionize medical diagnostics using AI. It focuses on enhancing disease diagnosis by analyzing medical images, with an overarching goal to evolve into a comprehensive AI-driven healthcare system. Miners and validators play crucial roles; miners analyze medical images using AI, and validators ensure the reliability and accuracy of these AI models. The subnet emphasizes collaboration with medical professionals and data scientists and is currently developing a user-friendly mobile app for easy access to AI-driven diagnostics. The long-term vision includes expanding diagnostic capabilities and integrating advanced patient data analysis techniques for a global, AI-driven healthcare system."
     },
     {
