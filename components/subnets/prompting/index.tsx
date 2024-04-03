@@ -3,7 +3,7 @@ import react, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import comImage from '@/public/images/commune-logo.svg';
 import userImage from '@/public/images/male-user-icon.webp';
-
+import axios from 'axios';
 type ConversationType = {
     role: string;
     content: string;
@@ -16,7 +16,7 @@ const Prompting = () => {
     const [inputVal, setInputValue] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
     const conversationScroll = useRef<HTMLDivElement>(null);
-
+    const [textPromptItems, setTextPromtItems] = useState<TextPromptItem>({roles: [], messages: []});
 
     useEffect(() => {
         function handleKeyPress(event: KeyboardEvent) {
@@ -46,16 +46,50 @@ const Prompting = () => {
 
     }, [conversation]);
 
+    interface TextPromptItem {
+        roles: string[];
+        messages: string[];
+      }
+      
+    // Define an async function to perform the POST request
+    async function postTextPrompting(item: TextPromptItem): Promise<any> {
+    try {
+        const response = await axios.post(`https://api.comtensor.io/text-prompting/`, item);
+        return response.data;
+    } catch (error) {
+        if (axios.isAxiosError(error)) {
+        console.error('Axios error message:', error.message);
+        return error.message;
+        } else {
+        console.error('Unexpected error:', error);
+        return 'An unexpected error occurred';
+        }
+    }
+    }
     
     const onSendQueryHandle = async() => {
         const data = {
             role: 'user',
             content: inputVal
         }
-
+        // setTextPromtItems(prev => ({...prev, messages: [inputVal]}));
+        // setTextPromtItems({roles : [...textPromptItems.roles, 'user'], messages: [...textPromptItems.messages, inputVal]});
+        const newTextPromptItems = {roles : [...textPromptItems.roles, 'user'], messages: [...textPromptItems.messages, inputVal]};
         setConversation(prev =>  [...prev, data]);
-
         setLoading(true);
+        console.log(newTextPromptItems);
+        postTextPrompting(newTextPromptItems).then((response) => {
+            console.log(response[0]);
+            const data = {
+                role: 'assistant',
+                content: response[0].completion
+            }
+            setConversation(prev =>  [...prev, data]);
+            setTextPromtItems({roles : [...textPromptItems.roles], messages: [...textPromptItems.messages, inputVal, response[0].completion]});
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 
         setLoading(false);
     }
