@@ -41,6 +41,7 @@ export const items = [
         name: "Text Prompting",
         url: 'prompting',
         description: "Subnet 1 in the Bittensor network is dedicated to incentivizing the development of conversational intelligence on an internet scale. It serves as a platform for advancing AI communication technologies, where participants are rewarded for their contributions towards this goal. This subnet plays a crucial role in Bittensor’s decentralized AI service ecosystem, fostering innovation and engagement in the field of AI-driven conversations."
+
     },
     {
         netuid: 2,
