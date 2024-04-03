@@ -39,8 +39,8 @@ export const items = [
         image: subnetImageOne,
         creator: 'Open Tensor',
         name: "Text Prompting",
-        url: '',
-        description: "Subnet 1 in the Bittensor network is dedicated to incentivizing the development of conversational intelligence at an internet scale. It serves as a platform for advancing AI communication technologies, where participants are rewarded for their contributions towards this aim. This subnet is a key part of Bittensor’s decentralized AI service ecosystem, encouraging innovation and participation in the field of AI-driven conversations. "
+        url: 'prompting',
+        description: "Subnet 1 in the Bittensor network is dedicated to incentivizing the development of conversational intelligence on an internet scale. It serves as a platform for advancing AI communication technologies, where participants are rewarded for their contributions towards this goal. This subnet plays a crucial role in Bittensor’s decentralized AI service ecosystem, fostering innovation and engagement in the field of AI-driven conversations."
     },
     {
         netuid: 2,
@@ -48,15 +48,15 @@ export const items = [
         creator: 'Lucrosus Capital',
         name: "Machine Translation",
         url: 'translate',
-        description: "BitTranslate is a Subnet that rewards high-quality translations. Validators produce unique text using a multilingual text generation model. The text is then sent to Miners which apply a text-to-text model to produce a translation. The validator then evaluates the outputted translations using two Reward Models that are based on the methods from academic papers."
+        description: "BitTranslate is a subnet that rewards high-quality translations. Validators generate unique text using a multilingual text generation model. The text is then passed to Miners, who utilize a text-to-text model to create a translation. The validator then assesses the translated outputs using two Reward Models based on methodologies from academic papers."
     },
     {
         netuid: 3,
         image: subnetImageThree,
-        creator: 'GitPhantom',
-        name: "Hotkey",
-        url: '',
-        description: "HotKey, your gateway to a revolutionized digital finance landscape. Here, effortless trading fuses with AI-powered insights, all within a cohesive ecosystem designed for the modern crypto enthusiast."
+        creator: 'MyShell',
+        name: "MyShell",
+        url: 'myshell',
+        description: "MyShell specializes in advancing Text-to-Speech (TTS) technology, with a focus on developing open-source TTS models. Led by a team with strong academic backgrounds and extensive expertise, MyShell contributes to enhancing voice-enabled applications through innovation and collaboration."
     },
     {
         netuid: 4,
@@ -64,7 +64,7 @@ export const items = [
         creator: 'Carro',
         name: "Multi Modality",
         url: '',
-        description: "Subnet 4 is the ultimate decentralized next generation search engine that leverages machine learning to capture the meaning of unconstrusted data including text and images."
+        description: "Subnet 4 is a leading distributed next-generation search engine that leverages machine learning to capture meaning in unstructured data, including text and images."
     },
     {
         netuid: 5,
@@ -72,7 +72,7 @@ export const items = [
         creator: 'Open-Kaito',
         name: "Open-Kaito",
         url: '',
-        description: "Subnet 5, OpenKaito, is Kaito AI's initiative to decentralize its Web3 search platform. Overcoming operational challenges, it utilizes BitTensor's Yuma consensus and an AI-based nDCG evaluator for search relevance. The goal is to involve the public in building and benefiting from a decentralized smart search and analytics platform, featuring low latency and innovative caching mechanisms on validator nodes."
+        description: "Subnet 5, OpenKaito, is Kaito AI's initiative to decentralize the Web3 search platform. It leverages Bittensor's Yuma consensus and AI-based nDCG evaluator for search relevance while overcoming operational challenges. The goal is to engage the public in building and benefiting from a decentralized smart search and analytics platform featuring low latency and innovative caching mechanisms on validator nodes."
     },
     {
         netuid: 6,
@@ -80,7 +80,7 @@ export const items = [
         creator: 'Nous Research',
         name: "Nous Research",
         url: '',
-        description: "The Nous-Bittensor subnet rewards miners for fine-tuning Large Language Models (LLMs) with data generated from a continuous stream of synthetic data provided by subnet 18 (also on Bittensor). It is the first-ever continuous fine-tuning benchmark, with new data generated daily, and the first incentivized fine-tuning benchmark. Additionally, it is the first Bittensor subnet to perform true cross-boundary communication, where data from one subnet is utilized in a secondary subnet."
+        description: "The Nous-Bittensor subnet rewards miners who fine-tune their Large Language Models (LLMs) using data generated from continuous synthetic data streams provided by subnet 18 (also from Bittensor). This is the first continuous fine-tuning benchmark with new data generated every day, and the first incentive-based fine-tuning benchmark. Additionally, this is the first Bittensor subnet to perform true border-to-border communication, where data from one subnet is leveraged from a secondary subnet."
     },
     {
         netuid: 7,
@@ -88,7 +88,7 @@ export const items = [
         creator: '',
         name: "SubVortex",
         url: '',
-        description: "SubVortex introduces an incentivized, decentralized network of subtensor nodes, integral to the Bittensor ecosystem, aimed at promoting decentralization, stability, and efficient resource distribution, thereby enhancing the network's overall functionality and governance."
+        description: "SubVortex introduces a network of incentivized, decentralized Subtensor nodes that are integral to the Bittensor ecosystem, aiming to improve the overall functionality and governance of the network by promoting decentralization, stability, and efficient resource deployment."
     },
     {
         netuid: 8,
@@ -96,7 +96,7 @@ export const items = [
         creator: 'Taoshi',
         name: "Taoshi",
         url: '',
-        description: "Subnet 8 is a part of the Taoshi network focused on decentralized financial forecasting, primarily for Bitcoin. It utilizes a decentralized network where miners contribute predictive models for Bitcoin's price movement, with models being scored and rewarded. Subnet 8 emphasizes open-source prediction modeling and a transparent, merit-based ecosystem, offering significant incentives for contributions to financial market predictions."
+        description: "Subnet 8 is part of the Taoshi network, which primarily focuses on decentralized finance predictions for Bitcoin. It utilizes a decentralized network where miners provide predictive models for Bitcoin price movements, and the models are scored and rewarded. Subnet 8 emphasizes open source predictive modeling and a transparent merit-based ecosystem to provide significant incentives for contributions to financial market forecasting."
     },
     {
         netuid: 9,
@@ -104,7 +104,7 @@ export const items = [
         creator: 'Const',
         name: "Pre Training",
         url: '',
-        description: "Facilitates pre-training of AI models on large-scale generic datasets before fine-tuning in specific tasks."
+        description: "Facilitates pre-training of AI models on large, generic datasets before fine-tuning them for specific tasks."
     },
     {
         netuid: 10,
@@ -112,7 +112,7 @@ export const items = [
         creator: 'Open Tensor',
         name: "Map Reduce",
         url: '',
-        description: "Bittensor Subnet 10, or Map Reduce Subnet, rewards miners for contributing network bandwidth and memory resources. It employs a broadcast system, where large files are divided and distributed across multiple peers, reducing the need for high individual upload capacity. The network operates in two modes: 'map', for dispersing data across peers, and 'reduce', for aggregating and returning the data. This efficient process is key for distributed machine learning model training, optimizing both speed and consistency."
+        description: "Bittensor Subnet 10, or Map Reduce Subnet, rewards miners for contributing network bandwidth and memory resources. It uses a broadcast system to distribute large files across multiple peers, reducing the need for high individual upload capacity. The network operates in two modes: 'map' mode, which distributes data among peers, and 'reduce' mode, which aggregates and returns data. This efficient process is key to training distributed machine learning models, optimizing both speed and consistency."
     },
     {
         netuid: 11,
@@ -120,7 +120,7 @@ export const items = [
         creator: 'Cazure8',
         name: "Transcription",
         url: '',
-        description: "The Transcription Subnet within the Bittensor ecosystem is a decentralized AI network focusing on audio-to-text technology. It aims to democratize access to advanced AI for transcribing spoken language, involving miners who transcribe using models like Wave2Vec 2.0 and validators who ensure transcription quality. The network emphasizes using rich audio datasets for training and plans to include more models and datasets for enhanced language understanding. It also highlights the importance of computational resources for effective transcription and rewards. This initiative represents a significant step in making audio content more accessible and valuable across various sectors."
+        description: "The Transcription subnet within the Bittensor ecosystem is a decentralized AI network focused on audio-to-text technology. The network aims to democratize access to advanced AI that transcribes spoken language, and includes miners who transcribe using models like Wave2Vec 2.0 and validators who ensure transcription quality. The network emphasizes the use of rich audio datasets for training and plans to include more models and datasets to improve language understanding. It also emphasizes the importance of computing resources for effective transcription and rewards. This initiative is an important step toward increasing the accessibility and value of audio content in a variety of fields."
     },
     {
         netuid: 12,
@@ -128,7 +128,7 @@ export const items = [
         creator: 'Rhef',
         name: "Compute Horde",
         url: '',
-        description: "Bittensor Subnet 12, known as ComputeHorde, is designed to enhance task processing efficiency through decentralized distribution. It divides tasks among various miners and executors, enabling simultaneous processing and optimizing parallel task execution. The network incorporates a pricing model for task execution, charging users for task acceptance. Additionally, it includes a system for validation and performance adjustment, using both organic and synthetic requests to evaluate and refine miner performance. Executors, which are dynamically managed virtual machines, are deployed for specific tasks and terminated post-completion. This system facilitates coordinated, efficient decentralized task processing, with a focus on dynamic resource management and performance optimization."
+        description: "The Bittensor subnet 12, known as Computehorse, is designed to increase the efficiency of job processing through decentralized distribution. It splits jobs among various miners and executors to enable concurrent processing and optimize parallel job execution. The network incorporates a pricing model for job execution, charging users for accepting jobs. It also includes a system for validation and performance tuning, using both organic and synthetic requests to evaluate and improve miner performance. Executors, which are dynamically managed virtual machines, are deployed for specific tasks and shut down after completion. The system facilitates coordinated and efficient distributed job processing with a focus on dynamic resource management and performance optimization."
     },
     {
         netuid: 13,
@@ -136,7 +136,7 @@ export const items = [
         creator: 'RusticLuftig',
         name: "Data Universe",
         url: '',
-        description: "Data Universe is a Bittensor subnet for collecting and storing large amounts of data from across a wide-range of sources, for use by other Subnets. It was built from the ground-up with a focus on decentralization and scalability. There is no centralized entity that controls the data; the data is stored across all Miner's on the network and is queryable via the Validators. At launch, Data Universe is able to support up to 50 Petabytes of data across 200 miners, while only requiring ~10GB of storage on the Validator."
+        description: "A data universe is a Bittensor subnet for collecting and storing large amounts of data from a variety of sources for use by other subnets. It was built from the ground up with a focus on decentralization and scalability. There is no centralized entity that controls the data, and data is stored on any miner in the network and can be queried through validators. At launch, the Data Universe can support up to 50 petabytes of data from 200 miners, and validators only require up to 10GB of storage."
     },
     {
         netuid: 14,
@@ -144,7 +144,7 @@ export const items = [
         creator: 'Ceterum1',
         name: "LLM Defender",
         url: '',
-        description: "Bittensor subnet 14 is designed to enhance security for Large Language Models (LLMs) by implementing a defense-in-depth approach through multiple defensive methods and engines. These engines, consisting of single or multiple analyzers, work together to detect attacks against LLMs, providing a modular and high-performing detection capability. The subnet assigns a confidence score to inputs, indicating the likelihood of an attack on LLMs, and combines intelligence from hundreds of endpoints to secure applications effectively. Its goal is to empower LLM developers to integrate decentralized intelligence with local defenses, offering robust protection against evolving threats. This comprehensive approach enables unprecedented security potential for LLM applications within the Bittensor ecosystem."
+        description: "Bittensor Subnet 14 is designed to enhance security for large-scale language models (LLMs) by implementing a defense-in-depth approach with multiple defense methods and engines. These engines, consisting of single or multiple analyzers, work together to detect attacks against LLMs, providing modular, high-performance detection capabilities. They assign confidence scores to inputs to indicate the likelihood of an attack on the LLM and combine intelligence gathered from hundreds of endpoints to effectively protect applications. The goal of this solution is to empower LLM developers to integrate distributed intelligence with local defenses to provide robust protection against evolving threats. This comprehensive approach provides unprecedented security potential for LLM applications within the Bittensor ecosystem."
     },
     {
         netuid: 15,
@@ -152,7 +152,7 @@ export const items = [
         creator: 'Aphex5',
         name: "Blockchain Insights",
         url: '',
-        description: "Bittensor Subnet 15 is dedicated to converting raw blockchain data into structured, understandable graph models. It aims to deliver in-depth insights into blockchain transactions, covering aspects like DeFi activities and NFT trades. The subnet offers data analytics through a desktop application, detailed insights into token transactions, and customizable queries for specialized data analysis. It supports predefined and custom queries via an API, alongside the visualization of financial flows in graph models. Lastly, Subnet 15 supports both UTXO-based blockchains like Bitcoin and Ethereum, as well as EVM-compatible chains."
+        description: "Bittensor Subnet 15 is dedicated to transforming raw blockchain data into a structured, easy-to-understand graph model. The subnet aims to provide deep insights into blockchain transactions, including aspects such as DEFI activity and NFT transactions. The subnet offers data analysis via a desktop application, detailed insights into token transactions, and custom queries for specialized data analysis. It also supports predefined and custom queries via APIs, along with financial flow visualizations in graph models. Finally, Subnet 15 supports both UTXO-based blockchains such as Bitcoin and Ethereum, as well as EVM-compatible chains."
     },
     {
         netuid: 16,
@@ -160,7 +160,7 @@ export const items = [
         creator: 'UncleTed',
         name: "Audio Generation",
         url: '',
-        description: "This subnetwork is a decentralized system designed for text-to-audio applications within the Bittensor network. It consists of a Validator and a Miner working collaboratively to generate high-quality audio from provided prompts. In the first phase, we will start with text-to-speech (TTS), working in parallel to add music generation in the upcoming updates."
+        description: "This subnetwork is a decentralized system designed for text-to-audio applications within the Bittensor network. It consists of validators and miners that work collaboratively to produce high-quality audio from the provided prompts. We'll start with text-to-speech (TTS) in the first phase and work simultaneously to add music generation in future updates."
     },
     {
         netuid: 17,
@@ -168,7 +168,7 @@ export const items = [
         creator: 'UncleTed',
         name: "Flavia",
         url: '',
-        description: "The Flavia project within Bittensor subnet 17 offers decentralized model inference, enhancing distributed computing with efficiency and scalability. It leverages a network of nodes, each contributing to a robust and resilient inference process, devoid of single points of failure. The subnet's adaptability allows it to manage diverse computational demands. Flavia democratizes advanced model inference, enabling access without extensive hardware investments. This innovation is key in a data-centric world, promoting a collaborative digital ecosystem."
+        description: "The Flavia project within Bittensor subnet 17 provides distributed model inference, improving distributed computing through efficiency and scalability. It leverages a network of nodes, each contributing to a robust and resilient inference process with no single point of failure. The adaptability of subnets allows you to manage a variety of computational requirements. Flavia democratizes advanced model inference, making it accessible without extensive hardware investments. These innovations are at the heart of a data-driven world that fosters collaborative digital ecosystems."
     },
     {
         netuid: 18,
@@ -184,7 +184,7 @@ export const items = [
         creator: 'Namoray',
         name: "Vision",
         url: '',
-        description: "Subnet 19 is a Bittensor subnetwork, focused around inference at scale, with an initial focus on image generation & manipulation models."
+        description: "Subnet 19 is the Bittensor subnetwork, initially focusing on image creation and manipulation models and inference at scale."
     },
     {
         netuid: 20,
@@ -192,7 +192,7 @@ export const items = [
         creator: 'Rogue Tensor',
         name: "Bit Agent",
         url: '',
-        description: "Bittensor Subnet 20, known as BitAgent, focuses on two core areas: Q&A/Tasking and Integrated Orchestration. Q&A/Tasking includes real-time data analysis, summarization, logic-based reasoning, and tool execution tasks. Integrated Orchestration involves natural language-driven task completion in applications, such as browser plugins for simplified web interaction and data filtering. The future vision includes integrating other subnets for advanced capabilities. Key features in development include a Discord bot, web and form filler applications, a browser plugin, and a miner providing feedback and requiring low entry barriers. This subnet aims to offer state-of-the-art capabilities with a focus on accessibility and real-world applications."
+        description: "Bittensor Subnet 20, known as BitAgent, focuses on two key areas: Q&A/Actions and Integration Orchestration. Q&A/Tasking includes real-time data analysis, summarization, logic-based reasoning, and tool execution. Integrated orchestration includes natural language-based task completion in applications such as browser plug-ins for simplified web interactions and data filtering. Future vision includes consolidating other subnets for advanced features. Key features of the development include a Discord bot, web and form filler applications, browser plugins, and a miner that provides feedback and requires a low barrier to entry. This subnet aims to provide cutting-edge features with a focus on accessibility and real-world applications."
     },
     {
         netuid: 21,
@@ -200,7 +200,7 @@ export const items = [
         creator: 'iFrit98',
         name: "FileTAO",
         url: '',
-        description: "FileTAO (Bittensor Subnet 21) implements a novel, multi-layered zero-knowledge interactive proof-of-spacetime algorithm by cleverly using Pedersen commitments, random challenges leveraging elliptic curve cryptography, sequential seed-based chained hash verification, and merkle proofs to achieve an efficient, robust, secure, and highly available decetralized storage system on the Bittensor network. The system validates on encrypted user data, such that miners are unaware of what data they are storing, and only end-users may encrypt/decrypt the data they provide with their bittensor wallet coldkey."
+        description: "FileTAO (Bittensor Subnet 21) implements a novel multi-layer zero-knowledge interactive space-time proof algorithm through clever use of Pedersen commitments, random assignments leveraging elliptic curve cryptography, sequential seed-based chained hash verification, and Merkle proofs. An efficient, robust, secure, and highly available decentralized storage system on the Bittensor network. The system validates encrypted user data, so miners cannot know what data they are storing and only end users can encrypt/decrypt the data they provide with their Bittensor wallet cold keys."
     },
     {
         netuid: 22,
@@ -208,7 +208,7 @@ export const items = [
         creator: 'surcyf123',
         name: "Datura",
         url: '',
-        description: "Bittensor Smart-Scrape on Subnet 22 is an advanced AI-powered tool designed for efficient Twitter data analysis. It offers real-time access to Twitter's database, sentiment and metadata analysis, enhancing understanding of public sentiment and user interactions. Positioned on the decentralized Bittensor network, it promises reliability, customizability, and is suitable for a wide range of research applications. This user-friendly platform streamlines data analysis, saving time and aiding in informed decision-making across various fields."
+        description: "Smart-Scrape(Bittensor Subnet 22) is an advanced AI-based tool designed for efficient Twitter data analysis. It provides real-time access to Twitter's database, sentiment, and metadata analytics to improve understanding of public sentiment and user interactions. Located on the decentralized Bittensor network, it promises reliability and customizability and is suitable for a wide range of research applications. This user-friendly platform simplifies data analysis, saves time, and supports informed decision-making in a variety of fields."
     },
     {
         netuid: 23,
@@ -216,7 +216,7 @@ export const items = [
         creator: 'MrNiche',
         name: "NicheImage",
         url: '',
-        description: "The goal of the NicheImage subnet is to have the best image generation models for multiple use cases, and to provide efficient, low-cost inference for companies looking for image generation services."
+        description: "The goal of the NicheImage subnet is to have the best image creation models for a variety of use cases and to provide efficient and affordable inference for businesses looking for image creation services."
     },
     {
         netuid: 24,
@@ -232,7 +232,7 @@ export const items = [
         creator: 'KMFODA',
         name: "Distributed Training",
         url: '',
-        description: "Our ambition is to train the largest ever Large Language Model (LLM), harnessing the unique strengths of the Bittensor network's and in a completely decentralised manner. Our approach is rooted in transparency and open collaboration in the AI space."
+        description: "Our goal is to leverage the unique strengths of the Bittensor network and train the largest ever large language model (LLM) in a fully decentralized manner. Our approach is rooted in transparency and open collaboration in the AI space."
     },
     {
         netuid: 26,
@@ -240,7 +240,7 @@ export const items = [
         creator: 'Emperor Wang',
         name: "Image Alchemy",
         url: '',
-        description: "Bittensor subnet 26, aims to revolutionize image processing and generation through decentralized AI technology. Leveraging the Bittensor network, it focuses on creating high-quality, innovative visual content using advanced machine learning models. This approach enables a collaborative and transparent ecosystem for artists and developers, enhancing creativity and accessibility in digital imagery. Image Alchemy represents a significant step forward in combining AI with artistic expression, pushing the boundaries of what's possible in digital art and image synthesis."
+        description: "Bittensor Subnet 26 aims to revolutionize image processing and creation through decentralized AI technology. We focus on creating high-quality, innovative visual content using advanced machine learning models leveraging the Bittensor network. This approach enables a collaborative and transparent ecosystem for artists and developers, improving the creativity and accessibility of digital images. Image Alchemy represents an important step forward in combining AI and artistic expression to push the boundaries of what is possible in digital art and image compositing."
     },
     {
         netuid: 27,
@@ -248,7 +248,7 @@ export const items = [
         creator: 'Neural Internet',
         name: "Compute",
         url: '',
-        description: "This subnet aims to enhance decentralized computing capabilities, focusing on improving efficiency and scalability for AI computations. It leverages the Bittensor framework to facilitate collaborative computing power across a distributed network, supporting the execution of sophisticated AI models and tasks. The project emphasizes creating a more accessible and powerful computing platform for AI development in a decentralized environment. "
+        description: "This subnet aims to enhance distributed computing capabilities with a focus on improving the efficiency and scalability of AI computation. Leverage the Bittensor framework to drive collaborative computing power across distributed networks and support the execution of sophisticated AI models and tasks. The project emphasizes creating a more accessible and powerful computing platform for AI development in a distributed environment."
     },
     {
         netuid: 28,
@@ -256,7 +256,7 @@ export const items = [
         creator: 'Foundry',
         name: "S&P 500 Oracle",
         url: '',
-        description: "Foundry is launching Foundry S&P 500 Oracle to incentivize miners to make predictions on the S&P 500 price frequently throughout trading hours. Validators send miners a timestamp (a future time) for which the miners need to make an S&P 500 price prediction for. Miners need to respond with their prediction for the price of the S&P 500 at the given time. Validators store the miner predictions, and then calculate the scores of the miners after the predictions mature. Miners are ranked against eachother, naturally incentivizing competition between the miners."
+        description: "Foundry launched the Foundry S&P 500 Oracle to encourage miners to make frequent S&P 500 price predictions throughout trading hours. The validator sends the miner a timestamp (future time) that the miner needs to predict the S&P 500 price. Miners must respond to S&P 500 price predictions at a specific point in time. The validator stores the miner's predictions and then calculates the miner's score after the predictions mature. Miners are ranked against each other, naturally encouraging competition among miners."
     },
     {
         netuid: 29,
@@ -272,7 +272,7 @@ export const items = [
         creator: '404',
         name: "Wombo",
         url: '',
-        description: "WOMBO, a trailblazer in AI-driven creativity, has made a significant impact with over 100 million downloads and 1 billion creations. It stands at the forefront of enhancing human creativity through innovative tools like WOMBO Dream and WOMBOT, allowing users to generate art and memes from simple inputs. Backed by prominent investors, WOMBO embodies the fusion of technology and artistry, aiming to be the happiest corner on the internet. Through its commitment to unlocking the creative genius in everyone, WOMBO is reshaping the way we imagine and create content."
+        description: "WOMBO, a pioneer in AI-based creativity, has made a huge impact with over 100 million downloads and over 1 billion creations. We are pioneering the advancement of human creativity through innovative tools like WOMBO Dream and WOMBOT, which allow users to create works of art and memes with simple input. WOMBO, backed by renowned investors, embodies the fusion of technology and artistry and aims to be the happiest corner of the Internet. WOMBO is changing the way we imagine and create content through our commitment to unlocking the creative genius in everyone."
     },
     {
         netuid: 31,
@@ -280,7 +280,7 @@ export const items = [
         creator: 'bthealthcare',
         name: "Healthcare",
         url: 'healthcare',
-        description: "Bittensor Subnet 31, known as the Healthcare-Subnet, aims to revolutionize medical diagnostics using AI. It focuses on enhancing disease diagnosis by analyzing medical images, with an overarching goal to evolve into a comprehensive AI-driven healthcare system. Miners and validators play crucial roles; miners analyze medical images using AI, and validators ensure the reliability and accuracy of these AI models. The subnet emphasizes collaboration with medical professionals and data scientists and is currently developing a user-friendly mobile app for easy access to AI-driven diagnostics. The long-term vision includes expanding diagnostic capabilities and integrating advanced patient data analysis techniques for a global, AI-driven healthcare system."
+        description: "Bittensor Subnet 31, known as Healthcare-Subnet, aims to revolutionize medical diagnostics using AI. We focus on strengthening disease diagnosis through medical image analysis and aim to evolve into an AI-based comprehensive healthcare system. Miners and validators play important roles. Miners use AI to analyze medical images, and verifiers ensure the reliability and accuracy of these AI models. Subnet emphasizes collaboration with medical experts and data scientists and is currently developing a user-friendly mobile app that will provide easy access to AI-based diagnostics. The long-term vision includes expanding diagnostic capabilities and integrating advanced patient data analytics technologies for a global AI-based healthcare system."
     },
     {
         netuid: 32,
@@ -288,6 +288,6 @@ export const items = [
         creator: 'bthealthcare',
         name: "Its-AI",
         url: '',
-        description: "Our subnet focuses on the detection of AI-generated content. Given the rapid growth of LLM-generated text, such as ChatGPT's output of 100 billion words daily compared to humans' 100 trillion, we believe that the ability to accurately determine AI-generated text will become increasingly necessary."
+        description: "Our subnet focuses on AI-generated content detection. Given the rapid growth of LLM-generated text, such as ChatGPT, which outputs 100 billion words per day compared to 100 trillion words for humans, we believe that the ability to accurately identify AI-generated text will become increasingly necessary."
     },
 ];
