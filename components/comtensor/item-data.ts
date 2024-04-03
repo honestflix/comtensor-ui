@@ -39,7 +39,7 @@ export const items = [
         image: subnetImageOne,
         creator: 'Open Tensor',
         name: "Text Prompting",
-        url: '',
+        url: 'prompting',
         description: "Subnet 1 in the Bittensor network is dedicated to incentivizing the development of conversational intelligence at an internet scale. It serves as a platform for advancing AI communication technologies, where participants are rewarded for their contributions towards this aim. This subnet is a key part of Bittensor’s decentralized AI service ecosystem, encouraging innovation and participation in the field of AI-driven conversations. "
     },
     {
@@ -55,7 +55,7 @@ export const items = [
         image: subnetImageThree,
         creator: 'GitPhantom',
         name: "Hotkey",
-        url: '',
+        url: 'myshell',
         description: "HotKey, your gateway to a revolutionized digital finance landscape. Here, effortless trading fuses with AI-powered insights, all within a cohesive ecosystem designed for the modern crypto enthusiast."
     },
     {
